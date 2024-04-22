@@ -110,21 +110,24 @@ mysql -h 192.168.0.125 -u root -pPassword@123
 Build your Docker image and run your dashboard locally:
 
 ```bash
-docker build -t my-dashing-dashboard .
-docker run -d -p 3030:3030 --name my-dashboard my-dashing-dashboard
+sudo docker build -t my-dashing-dashboard .
+sudo docker run -d -p 3030:3030 --name my-dashboard my-dashing-dashboard
 ```
 
 Manage your Docker container:
 
 ```bash
+-- List Containers:
+sudo docker ps -a
+
 -- Stop Container:
-docker stop my-dashboard
+sudo docker stop my-dashboard
 
 -- Start Container:
-docker start my-dashboard
+sudo docker start my-dashboard
 
 -- Remove Container (if you need to delete it and clean up):
-docker rm -f my-dashboard
+sudo docker rm -f my-dashboard
 
 ```
 
