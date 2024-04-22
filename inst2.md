@@ -55,7 +55,7 @@ This section guides you through the installation of MySQL and configuring it to 
 
 ### Step 4: Install MySQL
 
-Follow the instructions provided at the [dbForge guide to install MySQL on Ubuntu](https://www.devart.com/dbforge/mysql/how-to-install-mysql-on-ubuntu/) for versions 18.04, 20.04, and 22.04.
+Follow the instructions provided at the [Guide to install MySQL on Ubuntu](https://www.devart.com/dbforge/mysql/how-to-install-mysql-on-ubuntu/) for versions 18.04, 20.04, and 22.04.
 
 ### Step 5: Configure MySQL Environment
 
@@ -105,7 +105,18 @@ mysql -h 192.168.0.125 -u root -pPassword@123
 
 ## Deploying the Dashboard with Docker
 
-### Step 8: Build and Run the Docker Container
+### Step 8: Download dashboad template
+
+```bash
+https://github.com/arun12341234/my-dashing-dashboard.git
+````
+In docker-compose <.yml> file set your mysql credential.
+
+
+
+## Deploying the Dashboard with Docker
+
+### Step 9: Build and Run the Docker Container
 
 Build your Docker image and run your dashboard locally:
 
@@ -117,18 +128,14 @@ sudo docker run -d -p 3030:3030 --name my-dashboard my-dashing-dashboard
 Manage your Docker container:
 
 ```bash
--- List Containers:
-sudo docker ps -a
-
 -- Stop Container:
-sudo docker stop my-dashboard
+docker stop my-dashboard
 
 -- Start Container:
-sudo docker start my-dashboard
+docker start my-dashboard
 
 -- Remove Container (if you need to delete it and clean up):
-sudo docker rm -f my-dashboard
-
+docker rm -f my-dashboard
 ```
 
 ## Updating Dashboard Data
