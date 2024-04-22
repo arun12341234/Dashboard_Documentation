@@ -128,14 +128,17 @@ sudo docker run -d -p 3030:3030 --name my-dashboard my-dashing-dashboard
 Manage your Docker container:
 
 ```bash
+-- List Container:
+sudo docker ps -a
+
 -- Stop Container:
-docker stop my-dashboard
+sudo docker stop my-dashboard
 
 -- Start Container:
-docker start my-dashboard
+sudo docker start my-dashboard
 
 -- Remove Container (if you need to delete it and clean up):
-docker rm -f my-dashboard
+sudo docker rm -f my-dashboard
 ```
 
 ## Updating Dashboard Data
