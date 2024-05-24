@@ -81,6 +81,9 @@ In the file, change `bind-address` to `0.0.0.0` and restart MySQL:
 
 ```bash
 sudo systemctl restart mysql
+sudo apt-get install mysql-client
+sudo apt-get install libmysqlclient-dev
+sudo apt-get install libssl-dev
 ```
 
 ### Step 7: Adjust MySQL User Permissions
