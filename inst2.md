@@ -111,7 +111,7 @@ mysql -h 192.168.0.125 -u root -pPassword@123
 ### Step 8: Download dashboad template
 
 ```bash
-git clone https://github.com/arun12341234/my-dashing-dashboard.git
+git clone https://github.com/arun12341234/rpa_dashboard.git
 ````
 In docker-compose <.yml> file set your mysql credential.
 
