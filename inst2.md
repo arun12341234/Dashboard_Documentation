@@ -44,6 +44,7 @@ ruby -v  # Verify the installation
 Install essential build tools and the `smashing` gem, a framework for building dashboards:
 
 ```bash
+sudo apt install nodejs
 sudo apt install build-essential
 gem install bundler
 gem install smashing
@@ -115,6 +116,13 @@ git clone https://github.com/arun12341234/rpa_dashboard.git
 ````
 In docker-compose <.yml> file set your mysql credential.
 
+### Optional step: Check in local system
+
+Go to rpa_dashboard dir
+Run smashing
+```bash
+smashing start
+````
 
 
 ## Deploying the Dashboard with Docker
