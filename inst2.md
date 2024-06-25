@@ -63,7 +63,7 @@ Follow the instructions provided at the [Guide to install MySQL on Ubuntu](https
 Set the MySQL environment for your Ubuntu system:
 
 ```bash
-export DB_HOST=192.168.0.125
+export DB_HOST=192.168.0.125 # for local 127.0.0.1
 export DB_USERNAME=root
 export DB_PASSWORD=<Password>
 export DB_DATABASE=RPA_Dashboard
